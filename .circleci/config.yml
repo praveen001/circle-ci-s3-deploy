@@ -28,7 +28,7 @@ jobs:
           profile-name: default
       - run:
           name: Upload file to S3
-          command: aws s3 sync ./dist/ s3://bucket-name-goes-here/${CIRCLE_TAG} --delete
+          command: aws s3 sync ./dist/ s3://circle-ci-s3-deploy --delete
 
 workflows:
   version: 2
