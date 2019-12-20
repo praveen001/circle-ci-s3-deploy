@@ -8,7 +8,7 @@ module.exports = {
   entry: "./src/index.tsx",
 
   resolve: {
-    extensions: [".ts", ".tsx"]
+    extensions: [".ts", ".tsx", ".js", ".jsx"]
   },
 
   output: {
@@ -29,6 +29,6 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html"
-    }),
+    })
   ]
 };
